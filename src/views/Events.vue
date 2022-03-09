@@ -1,6 +1,5 @@
 <template>
   <div class="events">
-    <img alt="Vue logo" src="../assets/logo.png" />
     <EventCard v-for="item in events" :key="item.id" :event="item" />
   </div>
 </template>
@@ -10,7 +9,7 @@
 import EventCard from "@/components/EventCard";
 import EventService from "@/services/EventService";
 export default {
-  name: "HomeView",
+  name: "Events",
   components: {
     EventCard,
   },
